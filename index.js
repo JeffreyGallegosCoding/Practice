@@ -6,9 +6,19 @@ for(i = 0; i<array.length; i++) {
 		console.log('hey hey hey');
 	} else if(i < 15) {
 		console.log('wassssup');
-	} else if(i % 2) {
-		console.log('odd')
+	} else if(i % 2 !== 1) {
+		console.log('even')
 	} else {
 		console.log('naa');
 	}
 }
+
+fruits = [banana, apple, cherry, pineapple, grape, orange];
+
+for(i=0; i<=fruits.length; i++) {
+	if(fruit is red) {
+		console.log(fruits.i)
+	}
+}
+
+
