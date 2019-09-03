@@ -56,33 +56,34 @@
 // 	}
 
 
+function solution(N) {
 
-	let maxNumber = new Array(24);
-	for (let i=0; i < 24; i++) {
+	let maxNumber = new Array(N);
+	for(let i = 0; i < N; i++) {
 		maxNumber[i] = i + 1;
-	}
-	for (let i=0; i < maxNumber.length; i++) {
-		if (maxNumber[i] % 2 === 0) {
+	// }
+	// for(let i = 0; i < maxNumber.length; i++) {
+		if(maxNumber[i] % 2 === 0) {
 			console.log('Codility');
 		}
-		if (maxNumber[i] % 3 === 0) {
+		if(maxNumber[i] % 3 === 0) {
 			console.log('Test');
 		}
-		if (maxNumber[i] % 5 === 0) {
+		if(maxNumber[i] % 5 === 0) {
 			console.log('Coders');
-		}
-		if (maxNumber[i] % 2 === 0 && maxNumber[i] % 3 === 0) {
+		} if(maxNumber[i] % 2 === 0 && maxNumber[i] % 3 === 0) {
 			console.log('CodilityTest');
-		}
-		if (maxNumber[i] % 2 === 0 && maxNumber[i] % 5 === 0) {
+		} if(maxNumber[i] % 2 === 0 && maxNumber[i] % 5 === 0) {
 			console.log('CodilityCoders');
-		}
-		if (maxNumber[i] % 3 === 0 && maxNumber[i] % 5 === 0) {
+		} if(maxNumber[i] % 3 === 0 && maxNumber[i] % 5 === 0) {
 			console.log('TestCoders');
 		}
-		console.log(maxNumber[i]);
+
 	}
 
+}
+
+console.log(solution(24));
 
 
 
