@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+	</head>
+
+	<style>
+		.flex-container {
+			display: flex; /*Displays the content in container horizontally and container becomes flexible*/
+			flex-wrap: nowrap; /*Determines if the content will react to window compression - ex. nowrap will squish content, wrap will continue content on next line*/
+			background-color: aqua;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			justify-content: center;
+		}
+		.flex-container > div {
+			background-color: blueviolet;
+			width: 100px;
+			margin: 10px;
+			font-size: 100px;
+			text-align: center;
+		}
+	</style>
+
+
+	<body>
+		<div class="flex-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		</div>
+	</body>
+
+
+</html>
