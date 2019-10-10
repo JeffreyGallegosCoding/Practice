@@ -8,6 +8,7 @@
 	<style>
 		.card {
 			border: 3px solid black;
+			margin: 10px;
 		}
 		.img {
 			border: 5px solid darkblue;
@@ -19,20 +20,38 @@
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.container div { /*Using a class div allows you to edit the spacing between each div that is within the container*/
-			margin: 10px;
-		}
+		/*.container div { !*Using a class div allows you to edit the spacing between each div that is within the container*!*/
+			/*margin: 10px;*/
+		/*}*/
 		.head-container {
 			background-color: aqua;
-			border-top: 2px solid green;
+			border-top: 3px solid green;
+			border-bottom: 3px solid green;
 			text-align: center;
 			font-family: "Comic Sans MS";
 			padding-bottom: 3px;
+			margin-top: -4px;
 		}
 		.p-class {
 			text-align: center;
-			padding: 10px;
 			background-color: blueviolet;
+			border: 3px dotted chartreuse;
+		}
+
+		#spacing1 {
+			margin: 0;
+			padding-bottom: 30px;
+			padding-top: 30px;
+		}
+		#spacing2 {
+			margin: 0;
+			padding-bottom: 30px;
+			padding-top: 30px;
+		}
+		#spacing3 {
+			margin: 0;
+			padding-bottom: 30px;
+			padding-top: 30px;
 		}
 
 	</style>
@@ -41,28 +60,38 @@
 		<div class="container">
 		<div class="card">
 			<img class="img" alt= "Murray" src="https://www.fillmurray.com/300/300">
-			<div class="head-container">
-				<header>
+
+				<header class="head-container">
 					<h1>Bill</h1>
 				</header>
-			</div>
-			<div class="p-class">
+
+			<div class="p-class" id="spacing1">
 				<p>The Legend of Bill</p>
 			</div>
 		</div>
-		<div class="card">
-			<img class="img" alt= "Murray" src="https://www.fillmurray.com/300/300">
-			<div class="container">
-				<h3>Bill</h3>
-				<p>The Legend of Bill</p>
+
+			<div class="card">
+				<img class="img" alt= "Murray" src="https://www.fillmurray.com/300/300">
+
+				<header class="head-container">
+					<h1>Bill</h1>
+				</header>
+
+				<div class="p-class" id="spacing2">
+					<p>The Legend of Bill</p>
+				</div>
 			</div>
-		</div>
-		<div class="card">
-			<img class="img" alt= "Murray" src="https://www.fillmurray.com/300/300">
-			<div class="container">
-				<h3>Bill</h3>
-				<p>The Legend of Bill</p>
+
+			<div class="card">
+				<img class="img" alt= "Murray" src="https://www.fillmurray.com/300/300">
+
+				<header class="head-container">
+					<h1>Bill</h1>
+				</header>
+
+				<div class="p-class" id="spacing3">
+					<p>The Legend of Bill</p>
+				</div>
 			</div>
-		</div>
 		</div>
 	</body>
